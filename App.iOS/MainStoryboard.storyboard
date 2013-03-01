@@ -33,6 +33,9 @@
     <classes>
         <class className="EchoViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EchoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="EchoLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

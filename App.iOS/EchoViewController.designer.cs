@@ -6,7 +6,7 @@
 //
 using MonoTouch.Foundation;
 
-namespace App
+namespace App.iOS
 {
 	[Register ("EchoViewController")]
 	partial class EchoViewController

@@ -6,7 +6,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using TinyIoC;
 
-namespace App
+namespace App.iOS
 {
 	public partial class EchoViewController : UIViewController
 	{
