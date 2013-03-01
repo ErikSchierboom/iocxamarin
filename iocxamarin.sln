@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{500432BA-493D-4319-9501-D2E6C9A670B6}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.iOS", "App.iOS\App.iOS.csproj", "{6923B3B3-993E-4480-9866-9E2E8B1BB83F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Droid", "App.Droid\App.Droid.csproj", "{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}.Release|iPhone.Build.0 = Release|Any CPU
+		{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{14237D1E-9C28-49EE-85E4-F6FC96AD05C7}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{6923B3B3-993E-4480-9866-9E2E8B1BB83F}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{6923B3B3-993E-4480-9866-9E2E8B1BB83F}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{6923B3B3-993E-4480-9866-9E2E8B1BB83F}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{6923B3B3-993E-4480-9866-9E2E8B1BB83F}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{6923B3B3-993E-4480-9866-9E2E8B1BB83F}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{6923B3B3-993E-4480-9866-9E2E8B1BB83F}.Debug|iPhone.Build.0 = Debug|iPhone
+		{6923B3B3-993E-4480-9866-9E2E8B1BB83F}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{6923B3B3-993E-4480-9866-9E2E8B1BB83F}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{6923B3B3-993E-4480-9866-9E2E8B1BB83F}.Release|iPhone.ActiveCfg = Release|iPhone
+		{6923B3B3-993E-4480-9866-9E2E8B1BB83F}.Release|iPhone.Build.0 = Release|iPhone
+		{6923B3B3-993E-4480-9866-9E2E8B1BB83F}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{6923B3B3-993E-4480-9866-9E2E8B1BB83F}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = App.Droid\App.Droid.csproj
+	EndGlobalSection
+EndGlobal
