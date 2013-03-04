@@ -19,9 +19,12 @@ namespace App.iOS
 
 		public override void FinishedLaunching(UIApplication application)
 		{
-			// Auto-register all types with TinyIoC. After this call, we will be able to
-			// resolve components/services using TinyIocC
-			TinyIoCContainer.Current.AutoRegister();
+			// Register the UppercaseService and EchoService classes with TinyIoC
+            TinyIoCContainer.Current.Register<UppercaseService>();
+            TinyIoCContainer.Current.Register<EchoService>();
+
+            // Note: it is allo possible to auto-register all types with TinyIoC using:
+            // TinyIoCContainer.Current.AutoRegister();
 		}
 	}
 }

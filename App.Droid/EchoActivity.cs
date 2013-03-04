@@ -1,33 +1,35 @@
-using System;
-
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
-using TinyIoC;
-
 namespace App.Droid
 {
-	[Activity (Label = "App.Droid", MainLauncher = true)]
-	public class EchoActivity : Activity
-	{
-		protected override void OnCreate (Bundle bundle)
-		{
-			base.OnCreate (bundle);
+    using Android.App;
+    using Android.OS;
+    using Android.Widget;
 
-			// Set our view from the "echo" layout resource
-			SetContentView (Resource.Layout.Echo);
+    using TinyIoC;
 
-			// As we already registered the components/services in the AppDelegate's FinishedLaunching
-			// method, we can now resolve components/services
-			var echoService = TinyIoCContainer.Current.Resolve<EchoService>();
+    [Activity(Label = "IoC Demo", MainLauncher = true)]
+    public class EchoActivity : Activity
+    {
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
 
-			var echoTextView = FindViewById<TextView> (Resource.Id.echoTextView);
-			echoTextView.Text = echoService.Echo();
-		}
-	}
+            // Set our view from the "echo" layout resource
+            this.SetContentView(Resource.Layout.Echo);
+
+            // Register the UppercaseService and EchoService classes with TinyIoC
+            TinyIoCContainer.Current.Register<UppercaseService>();
+            TinyIoCContainer.Current.Register<EchoService>();
+
+            // Note: it is allo possible to auto-register all types with TinyIoC using:
+            // TinyIoCContainer.Current.AutoRegister();
+
+            // As we have registered the EchoService (and its dependent) classes, we can now
+            // resolve the class using TinyIoC
+            var echoService = TinyIoCContainer.Current.Resolve<EchoService>();
+
+            // Use the resolved EchoService instance to output text to the screen
+            var echoTextView = this.FindViewById<TextView>(Resource.Id.echoTextView);
+            echoTextView.Text = echoService.Echo();
+        }
+    }
 }
-
-
