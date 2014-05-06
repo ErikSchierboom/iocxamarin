@@ -7,20 +7,25 @@ Two demo applications that show how to use inversion of control (IoC) container 
 
 After including the [TinyIoc.cs](https://github.com/grumpydev/TinyIoC/blob/master/src/TinyIoC/TinyIoC.cs) file in your project, you are ready to go. Setting up TinyIoC can be as simple as a single line of code:
 
-    // Auto-register all classes
-    TinyIoCContainer.Current.AutoRegister();
-
+```c#
+// Auto-register all classes
+TinyIoCContainer.Current.AutoRegister();
+```
 
 After that line is called, all classes have been registered and you are ready to go:
 
-    var controller = TinyIoCContainer.Current.Resolve<IController>();
+```c#
+var controller = TinyIoCContainer.Current.Resolve<IController>();
+```
 
 
 You can also forgo the auto-registration and manually register individual components:
 
-    // Register individual classes with TinyIoC
-    TinyIoCContainer.Current.Register<UppercaseService>();
-    TinyIoCContainer.Current.Register<EchoService>();
+```c#
+// Register individual classes with TinyIoC
+TinyIoCContainer.Current.Register<UppercaseService>();
+TinyIoCContainer.Current.Register<EchoService>();
+```
 
 TinyIoC works under both Xamarin.iOS and Xamarin.Android, as the sample applications show.
 
